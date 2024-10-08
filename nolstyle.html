@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="nolstyle" content="width=device-width , initial-scale=1.0">
+    <title>nike </title>
+    <style>
+      body{
+        font-size: Arial,sans-serif ;
+        background-color:#fafafa;
+        margin: 0;
+        padding: 30px;
+        color:#000000;
+        text-align: center;
+      }
+      header {
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        color: azure;
+        padding: 30px 30px;
+        border-radius: 30px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0,0.1 );
+        position: relative;
+      }
+      header img {
+        width: 100px;
+        position: absolute;
+        left: 20px;
+      }
+      h1{
+        margin: 0 ;
+        font-size: 2.5em;
+      }
+      p{
+        font-size: 1.2em;
+        margin-top: 10em;
+      }
+      nav{
+        margin: 20px 0;
+      }
+      nav a {
+        margin: 0 15px;
+        color: #000033 ;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 10px 15px;
+        background-color: #fafafa;
+        border-radius: 5px;
+        transition: background-color 0.5s;
+      }
+      nav a :hover{
+        background-color: black;
+      }
+      .promo image{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        color: white;
+        font-size: 3.0em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);
+        text-align: center;
+      }
+      .menu{
+        display: flex;
+        justify-content: space-around;
+       flex-wrap: wrap;
+       margin: 3opx 0;
+      }
+      .menu-item{
+        background-color: #fafafa;
+        border: 2px solid #000080;
+        border-radius: 10px;
+        width: 220px; 
+        margin: 15px;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .menu-item:hover{
+        transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) ;
+      }
+      .menu-item img{
+        width:100% ;
+        height: 150px;
+        object-fit: cover;
+      } 
+      .menu-item h3{
+        margin: 10px 0;
+        font-size: 1.5em;
+        color: #1E90FF;
+      }
+      footer{
+        margin-top: 20px;
+        font-size:0.9em ;
+        color: #6699FF;
+      }
+     </style>
+</head>
+<body>
+
+
+
+<header>
+ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAADLCAMAAAB04a46AAAAeFBMVEX4+fkAAAD////7/Pz09fXx8vLh4uLo6enr7OzFxsYlJSXNzs4cHBylpaVzc3M3NzeZmZm2trZ8fHxfX188PDyen5/Z2dlYWFhMTEy/v78uLi5paWmtra3S0tIMCwuLjIyJiYlDQ0NTVFQYGBhxcXGKioojIyNISEjXqV52AAAE5ElEQVR4nO3c2WKyOhQFYLOjKCIq4FAURTu+/xueBLRHBhk0Cfh3fXe9gawSws7QDgYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH3FOY26boN5nGgcRVbXzTBLhB4e4tWXxXnXTTFIpLaiPTuuR/R3YstHbcc7xs42JyUXVHER3Yhos94zYX5Q9LDJ6Xty8ahHnj+VqVk8VtXHyTv0ObgMfYjfktBs5XFlrzY5WyXviw48+WoFszQ1Cxw1r3Z67THr6QMXoSf2aXcJzY6+pXQc54tVDx84l0OZ+3Zkv7FVf74oYFHfgsv+7fnsxltIihtJa8aGai/5HPmo7fh8m5rtD6pjDyhkrEdDmxi6LHebCc1msYYSjU/ElXvS0+VXy54vsqnZztNSmfKVuLbV/ZguQ2+WK5a3d5T38QTJAWSl48ptpLOOj0Jq5m80TUPkCy5+q1329KR/n76Lodn3eqhr9iUqF8ntKrgcvw/LoCQ0Y+/2QF+zeFr+2l284qIU5ZNofyxNzT519fEELdO7mB/b0lL0pzw0+1A3+yq/++ZyI7M9XYTmmVI0Z+cNdC+s7MwHl+N3OL8bWs6+9Hy+btDXtWcZCp6Wovn6JEPx7Ku8GdeOzhYGgovQg826fPz+bYervY8nTTkbCy6HMu9zV5FZeHM0fr5uXEd0YafzhjK0E9eE1liiFdozvrmrruDJUkL0XlKK5iwnxhbI6fZ10xJc1Cdjb16bmbEfj8ztC5B9e2v1c10RxT6dG6Rmn+pXGKpQpvttlC7gEQ0367cmodksNtfHExRl7h8qu7msT7x97VCW2kXaZl/3mjfKjje+mk0oMb8M49mdlAVb/SVaAcXZNiyevqJ8qZ3ltjximZOpz1fGKN+MpzbOuFwfjIKK+jtv6nazv0unfEuChztdOulo+FKn1C+QN23rpNiYh8b1dKu6ctJRNLc6ip0pVv9/Cm0bkxzFuLNodN/UYIlWRGVN+mqRXI5klrttPH5fnfWvMFTJfcOvmu4pJF9qv8VIdqVhE6gdOpc3bF37NORO9SD0W77UKdMlWknrD3cfybDqicjtSycu7nQ0cVZ4huFhxW/Zr4+ofJrEkzlHfG9NtM5W0fGkZ1W1ceZOctmTgxjO8vxgaHb09a4UN8bDmpYG0YZujMNTs4lWqVnUmyN41GRpYOXHazdy18v945mZ7OMdj+O3+PSpLC0YW0Vr5P6YrpbGjc7HkGsi9k9oZqW4BfrUH3u+6dGr/avVBPIB38uefL5yhnpjqzxmqhS3dMbufBpyX2358gTNm/nPuTMlfd5P1OlUu5amr5nSo9RayGOrqh1Pfe7jF+qfeI+mIVXIUxs76NM0pAp3VMY2cWBFFXUFzM7MgRVlFJWsWs9b6kB+fah6r9THL7hdH6vGzu18pfghrfc/st5DgwdWVMpvjbfTr+WkVnhhb7yxad+Wk9op2yttoi/bAk94ZO+rm5MbarVfjFh0dHJDNWq3GhG8fh+/ajFVmZ1er1apQA3LmIXxE3i60bDBrti8v2uHj+PkVO/xBy9amNbjtJmX/XmfKFS2a4detDBthNPIyR3YWszj0Br9y6Ev5J8QkOWEnufZjpX89If+hRCXxz1E4L+TGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP5R/wGoQDZC+jt+9AAAAABJRU5ErkJggg==" alt="โลโก้ nike">
+    <div>
+      <h1> สินค้า NIKE ออกใหม่</h1>
+    </div>
+</header>
+<nav>
+<a href="https://www.nike.com/th/">Home</a>
+<a href="https://www.nike.com/th/w/new-3n82y">สินค้าออกใหม่</a>
+<a href="https://www.nike.com/th/w/sale-3yaep">ลดราคา</a>
+<a href="https://www.nike.com/th/w/womens-member-access-4lbtyz5e1x6">สิทธิ์เข้าถึงสำหรับ Member</a>
+</nav>
+
+<a href="https://www.nike.com/th/w/sale-3yaep">
+  <img width="300" height="300" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4d67c46a-cb99-4160-9d2a-3ad5f5d27782/NIKE+DUNK+LOW+RETRO.png" alt="โฆษณา">
+   <div class="promo-text">รับส่วนลดสูงสุด 50% โดยไม่ต้องใช้โค้ด</div> 
+</a>
+
+
+<div class="menu">
+   <a href="https://www.nike.com/th/w?q=Nike%20Pegasus%2041%20Electric&vst=Nike%20Pegasus%2041%20Electric" target="_blank" class="menu-item">
+     <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4d63c937-787e-4ede-bdcd-0cf6ee44f7e4/AIR+ZOOM+PEGASUS+41+OLY.png" alt="Nike Pegasus 41 Electric">
+     <h3>Nike Pegasus 41 Electric</h3>
+   </a> 
+   <a href="https://www.nike.com/th/w/jordan-1-shoes-aj85gzy7ok/" target="_blank" class="menu-item">
+      <img src="data:image/jpeg;base64,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" alt="Jordan 1">
+      <h3>Jordan 1</h3>
+    </a>
+    <a href="https://www.nike.com/th/w/air-force-1-shoes-5sj3yzy7ok" target="_blank" class="menu-item">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70dc23a3-5054-46c1-acd2-0db28bbf8855/WMNS+AIR+FORCE+1+%2707.png" alt="Air Force 1">
+        <h3>Air Force 1</h3>
+    </a>
+    <a href="https://www.nike.com/th/w/vomero-shoes-7gee1zy7ok" target="_blank" class="menu-item">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d4c5c687-921d-4599-bcb7-a9e083c91d7c/W+NIKE+ZOOM+VOMERO+5.png" alt="Vomero">
+        <h3>Vomero</h3>
+    </a>
+</div>
+
+<footer>
+  <p>&copy;2024 NIKE.สงวนลิขสิทธิ์</p>
+</footer>
+ 
+
+</body>
+</html>
